@@ -156,7 +156,7 @@
         </div>
     </section>
 
-    <div class="container">
+    <section class="container">
         <h3>Video institucional</h3>
         <div class="embed-responsive embed-responsive-16by9">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/i_3Pv1AygeI"
@@ -165,8 +165,47 @@
                 allowfullscreen>
             </iframe>
         </div>
-    </div>
+    </section>
 
+    <section class="container" title="contato">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco</p>
+        <form>
+            <div class="form-group">
+                <label for="contato-nome">Nome:</label>
+                <input class="form-control" id="contato-nome" type="text" placeholder="Seu nome">
+            </div>
+            <div class="form-group">
+                <label for="contato-email">E-mail:</label>
+                <div class="input-group">
+                    <div class="input-group-addon">@</div>
+                    <input class="form-control" id="contato-email" type="email" placeholder="Seu e-mail">
+                </div>
+            </div>
+
+            <div class="grupo-radio">
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="tipo-pessoa" checked>
+                        Pessoa física
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="tipo-pessoa">
+                        Pessoa jurídica
+                    </label>
+                </div>
+            </div><!--
+                
+            --><select class="contato-select form-control">
+                <option disabled selected>Tipo de solicitação</option>
+                <option>Casa</option>
+                <option>Apartamento</option>
+                <option>Mansão</option>
+            </select>
+        </form>
+    </section>
 
     <script src="jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
