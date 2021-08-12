@@ -9,56 +9,98 @@
 </head>
 
 <body>
-    <section class="container">
-        <h2>Sobre Nós</h2>
-        <img class="img-responsive" src="img/empresa.jpg" alt="">
-
-        <div class="panel-group" id="paineis-sobre">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title" data-toggle="collapse" data-target="#primeiro-paragrafo"
-                        data-parent="#paineis-sobre">Desde 1935</h3>
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#collapse-navbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a id="titulo-nav" class="navbar-brand" href="#">
+                        TopCasaFina Arquitetura
+                    </a>
                 </div>
-                <div id="primeiro-paragrafo" class="collapse in">
-                    <div class="panel-body">
-                        <p>Desde 1935 trazendo casas, mansões e prédios lindos
-                            para
-                            o mundo</p>
-                    </div>
+
+                <div class="collapse navbar-collapse" id="collapse-navbar">
+                    <ul class="nav navbar-nav">
+                        <li><a id="item-navbar" href="#sobre-nos">Sobre nós</a></li>
+                        <li><a id="item-navbar" href="#nossos-projetos">Nossos projetos</a></li>
+                        <li><a id="item-navbar" href="#depoimentos">Depoimentos</a></li>
+                        <li><a id="item-navbar" href="#video">Video</a></li>
+                        <li><a id="item-navbar" href="#contato">Contato</a></li>
+                    </ul>
                 </div>
             </div>
+        </nav>
+        <div class="topCasaFina-banner">
+            <h1>TopCasaFina<br>
+                Arquitetura
+            </h1>
+            <p>Projetando a casa dos sonhos<br> desde 2000 A.C</p>
+            <button class="btn btn-primary btn-lg">Contate-nos agora</button>
+        </div>
+    </header>
 
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title" data-toggle="collapse" data-target="#segundo-paragrafo"
-                        data-parent="#paineis-sobre">
-                        Preços acessíveis
-                    </h3>
-                </div>
-                <div id="segundo-paragrafo" class="collapse">
-                    <div class="panel-body">
-                        <p>Temos os melhores preços do mercado e cobrimos qualquer
-                            oferta.
-                        </p>
+    <section id="sobre-nos" title="sobre-nos">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <div class="row">
+                <img class="img-responsive col-sm-6" src="img/empresa.jpg" alt="">
+
+                <div class="panel-group col-sm-6" id="paineis-sobre">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title" data-toggle="collapse" data-target="#primeiro-paragrafo"
+                                data-parent="#paineis-sobre">Desde 1935</h3>
+                        </div>
+                        <div id="primeiro-paragrafo" class="collapse in">
+                            <div class="panel-body">
+                                <p>Desde 1935 trazendo casas, mansões e prédios lindos
+                                    para
+                                    o mundo</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title" data-toggle="collapse" data-target="#terceiro-paragrafo"
-                        data-parent="#paineis-sobre">
-                        Alegria em colaborar para um mundo mais bonito.
-                    </h3>
-                </div>
-                <div id="terceiro-paragrafo" class="collapse">
-                    <div class="panel-body">
-                        <p>Trabalhamos com amor, sempre pensando no seu benefício.
-                        </p>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title" data-toggle="collapse" data-target="#segundo-paragrafo"
+                                data-parent="#paineis-sobre">
+                                Preços acessíveis
+                            </h3>
+                        </div>
+                        <div id="segundo-paragrafo" class="collapse">
+                            <div class="panel-body">
+                                <p>Temos os melhores preços do mercado e cobrimos qualquer
+                                    oferta.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title" data-toggle="collapse" data-target="#terceiro-paragrafo"
+                                data-parent="#paineis-sobre">
+                                Alegria em colaborar para um mundo mais bonito.
+                            </h3>
+                        </div>
+                        <div id="terceiro-paragrafo" class="collapse">
+                            <div class="panel-body">
+                                <p>Trabalhamos com amor, sempre pensando no seu benefício.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+
     </section>
     <div class="jumbotron">
         <div class="container">
@@ -66,50 +108,62 @@
             <p>Mais de 5 milhões de clientes satisfeitos em todo o mundo.</p>
         </div>
     </div>
-    <section class="container">
+    <section id="nossos-projetos" class="container" title="projetos">
         <h2>Nossos Projetos</h2>
-        <figure class="thumbnail">
-            <img src="img/projetos/casa-castelo.png" alt="foto da casa-castelo">
-            <figcaption class="caption">
-                <h3>Casa Castelo</h3>
-                <p>A Casa Castelo é o último lançamento da TopCasaFina Arquitetura, feita para um monge.</p>
-            </figcaption>
-        </figure>
+        <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <figure class="thumbnail">
+                    <img src="img/projetos/casa-castelo.png" alt="foto da casa-castelo">
+                    <figcaption class="caption">
+                        <h3>Casa Castelo</h3>
+                        <p>A Casa Castelo é o último lançamento da TopCasaFina Arquitetura, feita para um monge.</p>
+                    </figcaption>
+                </figure>
+            </div>
 
-        <figure class="thumbnail">
-            <img src="img/projetos/casa-lago.png" alt="foto da casa-lago">
-            <figcaption class="caption">
-                <h3>Casa Lago</h3>
-                <p>A Casa do Lago foi lar de inúmeras pessoas que conheciam o presidente da época.</p>
-            </figcaption>
-        </figure>
-
-        <figure class="thumbnail">
-            <img src="img/projetos/mercado-marapira.png" alt="foto do mercado-marapira">
-            <figcaption class="caption">
-                <h3>Mercado Marapira</h3>
-                <p>O mercado Marapira foi projetado nos mínimos detalhes na arquitetura baseada em frutas.</p>
-            </figcaption>
-        </figure>
-
-        <figure class="thumbnail">
-            <img src="img/projetos/palacio-dionisio.png" alt="foto do palacio-dionisio">
-            <figcaption class="caption">
-                <h3>Palácio Dionísio</h3>
-                <p>O palácio Dionísio foi eleito pela revista 'Grandes palácios' como o palácio mais lindo do mundo.</p>
-            </figcaption>
-        </figure>
-
-        <figure class="thumbnail">
-            <img src="img/projetos/residencia-ludi.png" alt="foto da residencia-ludi">
-            <figcaption class="caption">
-                <h3>Residência Ludi</h3>
-                <p>A residência Ludi foi projetada para ser a mais bela casa de São Paulo pela revista Housing.</p>
-            </figcaption>
-        </figure>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <figure class="thumbnail">
+                    <img src="img/projetos/casa-lago.png" alt="foto da casa-lago">
+                    <figcaption class="caption">
+                        <h3>Casa Lago</h3>
+                        <p>A Casa do Lago foi lar de inúmeras pessoas que conheciam o presidente da época.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <figure class="thumbnail">
+                    <img src="img/projetos/mercado-marapira.png" alt="foto do mercado-marapira">
+                    <figcaption class="caption">
+                        <h3>Mercado Marapira</h3>
+                        <p>O mercado Marapira foi projetado nos mínimos detalhes na arquitetura baseada em frutas.</p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <figure class="thumbnail">
+                    <img src="img/projetos/palacio-dionisio.png" alt="foto do palacio-dionisio">
+                    <figcaption class="caption">
+                        <h3>Palácio Dionísio</h3>
+                        <p>O palácio Dionísio foi eleito pela revista 'Grandes palácios' como o palácio mais lindo do
+                            mundo.
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <figure class="thumbnail">
+                    <img src="img/projetos/residencia-ludi.png" alt="foto da residencia-ludi">
+                    <figcaption class="caption">
+                        <h3>Residência Ludi</h3>
+                        <p>A residência Ludi foi projetada para ser a mais bela casa de São Paulo pela revista
+                            Housing.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
     </section>
 
-    <section title="Depoimentos">
+    <section id="depoimentos" title="Depoimentos">
         <h3 class="container titulos-depoimentos">Depoimentos de clientes</h3>
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
@@ -156,59 +210,81 @@
         </div>
     </section>
 
-    <section class="container">
-        <h3>Video institucional</h3>
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/i_3Pv1AygeI"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
+    <div class="container">
+        <div class="row">
+            <section id="video" class="col-sm-6">
+                <h3>Video institucional</h3>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/i_3Pv1AygeI"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+
+            <section id="contato" title="contato" class="col-sm-6">
+                <h2>Contato</h2>
+                <p>Entre em contato conosco</p>
+                <form>
+                    <div class="form-group">
+                        <label for="contato-nome">Nome:</label>
+                        <input class="form-control" id="contato-nome" type="text" placeholder="Seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="contato-email">E-mail:</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">@</div>
+                            <input class="form-control" id="contato-email" type="email" placeholder="Seu e-mail">
+                        </div>
+                    </div>
+
+                    <div class="grupo-radio">
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="tipo-pessoa" checked>
+                                Pessoa física
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="tipo-pessoa">
+                                Pessoa jurídica
+                            </label>
+                        </div>
+                    </div>
+                    <!--
+                        
+                 --><select class="contato-select form-control">
+                        <option disabled selected>Tipo de solicitação</option>
+                        <option>Casa</option>
+                        <option>Apartamento</option>
+                        <option>Mansão</option>
+                    </select>
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </form>
+            </section>
         </div>
-    </section>
+    </div>
 
-    <section class="container" title="contato">
-        <h2>Contato</h2>
-        <p>Entre em contato conosco</p>
-        <form>
-            <div class="form-group">
-                <label for="contato-nome">Nome:</label>
-                <input class="form-control" id="contato-nome" type="text" placeholder="Seu nome">
-            </div>
-            <div class="form-group">
-                <label for="contato-email">E-mail:</label>
-                <div class="input-group">
-                    <div class="input-group-addon">@</div>
-                    <input class="form-control" id="contato-email" type="email" placeholder="Seu e-mail">
-                </div>
-            </div>
 
-            <div class="grupo-radio">
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="tipo-pessoa" checked>
-                        Pessoa física
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="tipo-pessoa">
-                        Pessoa jurídica
-                    </label>
-                </div>
-            </div><!--
-                
-            --><select class="contato-select form-control">
-                <option disabled selected>Tipo de solicitação</option>
-                <option>Casa</option>
-                <option>Apartamento</option>
-                <option>Mansão</option>
-            </select>
-        </form>
-    </section>
+
+    <footer>
+        <address>
+            <strong>TopCasaFina arquitetura</strong><br>
+            Rua Vergueiro, 3185, Vila Mariana<br>
+            São Paulo, SP<br>
+            Tel: (11) 5571-2751 ou 5083-3884
+        </address>
+        <address>
+            E-mail: contato.topcasafina@alura.com.br
+        </address>
+    </footer>
 
     <script src="jquery.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="bootstrap/js/navbar-animation-fix.js"></script>
 </body>
 
 </html>
